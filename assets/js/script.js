@@ -79,7 +79,7 @@ const questions = [
             { text: "answer1", correct: false },
             { text: "answer1", correct: false },
             { text: "answer1", correct: false },
-            { text: "answer1", correct: true } ,
+            { text: "answer1", correct: true },
         ]
     },
     {
@@ -115,61 +115,71 @@ let score = 0;
 
 // function to load next question
 
-function loadQuestion () {
-clearQuestion ()
-let presentQuestion =questions[questionNumber];
-let questionNum = questionNumber + 1;
-questionText.innerHTML = "Question " + questionNum + " / " + questions.length + " - " + presentQuestion.question;
-presentQuestion.choices.forEach(answer => {
-const button = document.createElement("button");
-button.innerHTML = answer.text;
-button.classList.add("answerbuttons");
-questionAnswer.appendChild(button);
-if(answer.correct){
-button.dataset.correct = answer.correct
-}
-button.addEventListener("click", chooseAnswer);
-});
+function loadQuestion() {
+    clearQuestion();
+    let presentQuestion = questions[questionNumber];
+    let questionNum = questionNumber + 1;
+    questionText.innerHTML = "Question " + questionNum + " / " + questions.length + " - " + presentQuestion.question;
+    presentQuestion.choices.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("answerbuttons");
+        questionAnswer.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", chooseAnswer);
+    });
 
 }
 // function to clear the previous question
 
-function clearQuestion () {
-nextQuestion.style.display = 'none';
-while (questionAnswer.firstChild) {
-questionAnswer.removeChild(questionAnswer.firstChild);
-}
+function clearQuestion() {
+    nextQuestion.style.display = 'none';
+    while (questionAnswer.firstChild) {
+        questionAnswer.removeChild(questionAnswer.firstChild);
+    }
 
 }
 
 //function to choose answer
-function chooseAnswer (e) {
-const chosenAnswer = e.target;
-const chooseright = chosenAnswer.dataset.correct === "true";
-if (chooseright) {chosenAnswer.classList.add("correct");
-score ++;
-}
-else {
-chosenAnswer.classList.add("incorrect");
-}
-Array.from(questionAnswer.children).forEach(button => {
-if (button.dataset.correct === "true")
- {
-button.classList.add("correct");
-}
- button.disabled = true;
+function chooseAnswer(e) {
+    const chosenAnswer = e.target;
+    const chooseright = chosenAnswer.dataset.correct === "true";
+    if (chooseright) {
+        chosenAnswer.classList.add("correct");
+        score++;
+    }
+    else {
+        chosenAnswer.classList.add("incorrect");
+    }
+    Array.from(questionAnswer.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
 
-});
+    });
+    nextQuestion.style.display = "block";
 }
+
+
+
 
 //function to show scores at end of quiz
-function scoreResults () {
+function scoreResults() {
 
 }
 
-// function to show next button after question is pressed
-function displaybutton () {
+// function to show next button after question is pressed, display score if question number is the same as.
+function displaybutton() {
+    questionNumber++;
+    if (questionNumber < questions.length) {
+        loadQuestion();
+    } else {
+        scoreResults();
+    }
 
 }
 
-loadQuestion ()
+loadQuestion();
