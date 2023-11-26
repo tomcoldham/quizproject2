@@ -1,4 +1,4 @@
-debugger;
+
 // questions to be displayed
 const questions = [
     {
