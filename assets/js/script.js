@@ -168,7 +168,8 @@ function chooseAnswer(e) {
 
 //function to show scores at end of quiz
 function scoreResults() {
-
+clearQuestion();
+questionText.innerHTML = 'you scored ${score} out of ${questions.length}!';
 }
 
 // function to show next button after question is pressed, display score if question number is the same as.
