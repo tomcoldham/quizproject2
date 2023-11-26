@@ -2,102 +2,102 @@ console.log("hello");
 // questions to be displayed
 const questions = [
     {
-        question: "this is placeholder text for first question?",
+        question: "What is the capital of France?",
         choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
+            { text: "Paris", correct: true },
+            { text: "Rome", correct: false },
+            { text: "London", correct: false },
+            { text: "Sydney", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "How tall is mount Everest in metres?",
         choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
+            { text: "8849", correct: true },
+            { text: "10543", correct: false },
+            { text: "5673", correct: false },
+            { text: "7695", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "What is the name of the river that flows through London?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
+            { text: "River Mersey", correct: false },
+            { text: "River Dee", correct: false },
+            { text: "River Tyne", correct: false },
+            { text: "River Thames", correct: true },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "In which US state can you find the city of Chicago?",
         choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
+            { text: "Illinois", correct: true },
+            { text: "Mississipi", correct: false },
+            { text: "Missouri", correct: false },
+            { text: "Arizona", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "How many countries are their in the world?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
+            { text: "105", correct: false },
+            { text: "145", correct: false },
+            { text: "195", correct: true },
+            { text: "245", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "Which European city is not located on the Danube?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
+            { text: "Budapest", correct: false },
+            { text: "Prague", correct: true },
+            { text: "Vienna", correct: false },
+            { text: "Belgrade", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "What is the highest mountain in Japan?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
+            { text: "Mount Aino", correct: false },
+            { text: "Mount Kita", correct: false },
+            { text: "Mount Fuji", correct: true },
+            { text: "Mount Okuhotaka", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "What is the smallest country in the world?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
+            { text: "Andorra", correct: false },
+            { text: "Luxembourg", correct: false },
+            { text: "Belgium", correct: false },
+            { text: "Vatican City", correct: true },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "What is the capital of the United Arab Emirates?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
+            { text: "Ajman", correct: false },
+            { text: "Sharjah", correct: false },
+            { text: "Dubai", correct: false },
+            { text: "Abu Dhabi", correct: true },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "On which continent is the Sahara desert located?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
+            { text: "Europe", correct: false },
+            { text: "South America", correct: false },
+            { text: "Africa", correct: true },
+            { text: "Asia", correct: false },
         ]
     },
     {
-        question: "this is placeholder text for first question?",
+        question: "Which country is the most north on a globe?",
         choices: [
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: false },
-            { text: "answer1", correct: false },
+            { text: "Netherlands", correct: false },
+            { text: "Scotland", correct: true },
+            { text: "Belgium", correct: false },
+            { text: "Poland", correct: false },
         ]
     }
 ];
