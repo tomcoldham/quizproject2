@@ -68,6 +68,7 @@ margin-left: 250px;
 background-color: rgb(41, 122, 177);
 }
 
-.nextquestion:hover {
+.nextquestionstyle:hover {
 transform: scale(1.2)
 }
+
