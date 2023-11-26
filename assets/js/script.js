@@ -120,6 +120,17 @@ clearQuestion ()
 let presentQuestion =questions[questionNumber];
 let questionNum = questionNumber + 1;
 questionText.innerHTML = "Question " + questionNum + " / " + questions.length + " - " + presentQuestion.question;
+presentQuestion.choices.forEach(answer => {
+const button = document.createElement("button");
+button.innerHTML = answer.text;
+button.classList.add("answerbuttons");
+questionAnswer.appendChild(button);
+if(answer.correct){
+button.dataset.correct = answer.correct
+}
+button.addEventListener("click", chooseAnswer);
+});
+
 }
 // function to clear the previous question
 
