@@ -118,8 +118,8 @@ let score = 0;
 function loadQuestion () {
 clearQuestion ()
 let presentQuestion =questions[questionNumber];
-let 
-
+let questionNum = questionNumber + 1;
+questionText.innerHTML = "Question " + questionNum + " / " + questions.length + " - " + presentQuestion.question;
 }
 // function to clear the previous question
 
@@ -142,6 +142,4 @@ function displaybutton () {
 
 }
 
-beginQuiz ()
-
-console.log("hello");
+loadQuestion ()
