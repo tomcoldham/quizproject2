@@ -190,6 +190,7 @@ function displaybutton() {
     }
 };
 
+// gets user the next question when next is clicked
 nextQuestion.addEventListener("click", () =>{
 if(questionNumber < questions.length){
 displaybutton();
