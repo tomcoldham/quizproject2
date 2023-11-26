@@ -1,3 +1,4 @@
+console.log("hello");
 // questions to be displayed
 const questions = [
     {
@@ -112,6 +113,35 @@ const nextQuestion = document.getElementById("next-question");
 let questionNumber = 0;
 let score = 0;
 
-function beginQuiz() {
+// function to load next question
+
+function loadQuestion () {
+clearQuestion ()
+let presentQuestion =questions[questionNumber];
+let 
 
 }
+// function to clear the previous question
+
+function clearQuestion () {
+
+}
+
+//function to choose answer
+function chooseAnswer () {
+
+}
+
+//function to show scores at end of quiz
+function scoreResults () {
+
+}
+
+// function to show next button after question is pressed
+function displaybutton () {
+
+}
+
+beginQuiz ()
+
+console.log("hello");
