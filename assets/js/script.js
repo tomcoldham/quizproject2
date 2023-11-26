@@ -135,6 +135,10 @@ button.addEventListener("click", chooseAnswer);
 // function to clear the previous question
 
 function clearQuestion () {
+nextQuestion.style.display = 'none';
+while (questionAnswer.firstChild) {
+questionAnswer.removeChild(questionAnswer.firstChild);
+}
 
 }
 
