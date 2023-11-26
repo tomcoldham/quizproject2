@@ -1,4 +1,4 @@
-console.log("hello");
+debugger;
 // questions to be displayed
 const questions = [
     {
@@ -113,6 +113,14 @@ const nextQuestion = document.getElementById("next-question");
 let questionNumber = 0;
 let score = 0;
 
+// initiallises quiz
+beginQuiz();
+
+// main function to start quiz when page is opened
+function beginQuiz() {
+loadQuestion();
+}
+
 // function to load next question
 
 function loadQuestion() {
@@ -188,5 +196,5 @@ displaybutton();
 }else{
 }
 
-loadQuestion();
+
 })
