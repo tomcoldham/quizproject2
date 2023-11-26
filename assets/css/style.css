@@ -23,7 +23,7 @@ border: 5px solid grey;
 min-height: 60vh;
 min-width: 65vh;
 background-color: rgb(255, 255, 255);
-border-radius: 15px;
+border-radius: 15px; 
 }
 
 h1 {
@@ -54,7 +54,7 @@ border-radius: 10px;
 font-size: 20px;
 }
 
-.nextquestion {
+.nextquestionstyle {
 height: 65px;
 width: 250px;
 background-color: #8BC6EC;

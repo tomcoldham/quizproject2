@@ -99,3 +99,7 @@ const questions = [
         ]
     }
 ];
+
+const questionText = document.getElementById("questiondisplay");
+const questionAnswer = document.getElementsByClassName("questionanswers");
+const nextQuestion = document.getElementById("next-question");
