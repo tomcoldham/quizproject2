@@ -5,16 +5,7 @@ const questions = [
         question: "this is placeholder text for first question?",
         choices: [
             { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
             { text: "answer1", correct: true },
             { text: "answer1", correct: true },
         ]
@@ -95,9 +86,18 @@ const questions = [
         question: "this is placeholder text for first question?",
         choices: [
             { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
             { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
         ]
     }
 ];
@@ -143,8 +143,23 @@ questionAnswer.removeChild(questionAnswer.firstChild);
 }
 
 //function to choose answer
-function chooseAnswer () {
+function chooseAnswer (e) {
+const chosenAnswer = e.target;
+const chooseright = chosenAnswer.dataset.correct === "true";
+if (chooseright) {chosenAnswer.ClassList.add("correct");
+score ++;
+}
+else {
+chosenAnswer.classList.add("incorrect");
+}
+Array.from(questionAnswer.children).forEach(button => {
+if (button.dataset.correct === "true")
+ {
+button.classList.add("correct");
+ }
+ button.disabled = true;
 
+});
 }
 
 //function to show scores at end of quiz
