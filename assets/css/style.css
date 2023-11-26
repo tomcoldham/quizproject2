@@ -19,4 +19,17 @@ border: 5px solid grey;
 min-height: 65vh;
 min-width: 65vh;
 background-color: whitesmoke;
+margin: 15px;
 }
+
+h1 {
+text-align: center;
+}
+
+#questionanswers {
+display: flex;
+flex-direction: column;
+margin: 20px;
+padding: 5px;
+}
+
