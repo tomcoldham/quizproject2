@@ -65,8 +65,14 @@ p {
     margin-left: 250px;
 }
 
-.answerbuttons:hover {
-    background-color: rgb(41, 122, 177);
+@media (hover: hover) {
+    .answerbuttons:hover {
+        background-color: rgb(41, 122, 177);
+    }
+
+    .nextquestionstyle:hover {
+        transform: scale(1.2)
+    }
 }
 
 .nextquestionstyle:hover {
@@ -84,7 +90,7 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-.gamearea {
+    .gamearea {
         margin: auto;
         min-height: 60vh;
         min-width: 15vh;
