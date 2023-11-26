@@ -1,4 +1,3 @@
-
 // questions to be displayed
 const questions = [
     {
@@ -118,7 +117,7 @@ beginQuiz();
 
 // main function to start quiz when page is opened
 function beginQuiz() {
-loadQuestion();
+    loadQuestion();
 }
 
 // function to load next question
@@ -176,8 +175,8 @@ function chooseAnswer(e) {
 
 //function to show scores at end of quiz
 function scoreResults() {
-clearQuestion();
-questionText.innerHTML = `you scored ${score} out of ${questions.length}!`;
+    clearQuestion();
+    questionText.innerHTML = `you scored ${score} out of ${questions.length}!`;
 }
 
 // function to show next button after question is pressed, display score if question number is the same as.
@@ -188,14 +187,14 @@ function displaybutton() {
     } else {
         scoreResults();
     }
-};
-
-// gets user the next question when next is clicked
-nextQuestion.addEventListener("click", () =>{
-if(questionNumber < questions.length){
-displaybutton();
-}else{
 }
 
+// gets user the next question when next is clicked
+nextQuestion.addEventListener("click", () => {
+    if (questionNumber < questions.length) {
+        displaybutton();
+    } else {
+    }
 
-})
+
+});
