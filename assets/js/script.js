@@ -6,79 +6,25 @@ const questions = [
         choices: [
             { text: "answer1", correct: true },
             { text: "answer1", correct: false },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
         ]
     },
     {
         question: "this is placeholder text for first question?",
         choices: [
             { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
         ]
     },
     {
         question: "this is placeholder text for first question?",
         choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-        ]
-    },
-    {
-        question: "this is placeholder text for first question?",
-        choices: [
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
-            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
             { text: "answer1", correct: true },
         ]
     },
@@ -88,6 +34,60 @@ const questions = [
             { text: "answer1", correct: true },
             { text: "answer1", correct: false },
             { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true },
+            { text: "answer1", correct: false },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true },
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true } ,
+        ]
+    },
+    {
+        question: "this is placeholder text for first question?",
+        choices: [
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: false },
+            { text: "answer1", correct: true },
             { text: "answer1", correct: false },
         ]
     },
@@ -146,7 +146,7 @@ questionAnswer.removeChild(questionAnswer.firstChild);
 function chooseAnswer (e) {
 const chosenAnswer = e.target;
 const chooseright = chosenAnswer.dataset.correct === "true";
-if (chooseright) {chosenAnswer.ClassList.add("correct");
+if (chooseright) {chosenAnswer.classList.add("correct");
 score ++;
 }
 else {
@@ -156,7 +156,7 @@ Array.from(questionAnswer.children).forEach(button => {
 if (button.dataset.correct === "true")
  {
 button.classList.add("correct");
- }
+}
  button.disabled = true;
 
 });
