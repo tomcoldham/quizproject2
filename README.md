@@ -14,6 +14,10 @@ are correct and which ones they answered were wrong in a live format. There is a
   
 - Interactivity has been established in a number of ways, firstly the answer is highlighted green or red depending on if they got the answer right, and the next button is actually disabled until the user clicks on an answer. Lastly the user can only select one answer per question and the game prevents them from answering again.
 
+![Features](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/geoquiz.PNG)
+![Features](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/geoquizwrong.PNG)
+
+
 ## Testing
 
 - tested the quiz on multiple screen sizes and is fully operational. Text is still easy to read and is mobile/tablet responsive.
@@ -27,9 +31,11 @@ are correct and which ones they answered were wrong in a live format. There is a
 - JS
   - javascript testing showed 1 error that i was unable to fix even though the code worked.
 
-![Testing]()
-![Testing]()
-![Testing]()
+
+![Testing](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/project2htmlcheck.PNG)
+
+![Testing](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/csscheck2.PNG)
+
 
 ### Unfixed Bugs
 
