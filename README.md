@@ -2,7 +2,7 @@
 
 The geogrpaphy quiz is a fun and easy to use interactive quiz that gives its users an easy way to test out the general knowledge of the subject and provide feedback for how well they did.
 
-![Responsive-Mockup] (https://github.com/tomcoldham/quizproject2/assets/145606536/9b9997c3-0427-40fd-85e8-0a9845322a54)
+![Responsive-Mockup] https://github.com/tomcoldham/quizproject2/blob/main/assets/images/mockuproject2.PNG
 
 
 ## Features
