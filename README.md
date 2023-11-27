@@ -50,7 +50,7 @@ are correct and which ones they answered were wrong in a live format. There is a
   - Go back on the repository and on the right hand sart of the screen theres a section called deployments.
   - Click on deployments and there will be the deployed website to view.
   
-The live link can be found here -
+The live link can be found here - https://tomcoldham.github.io/quizproject2/
 
 ## Credits
 
