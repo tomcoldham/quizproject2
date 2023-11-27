@@ -34,7 +34,7 @@ are correct and which ones they answered were wrong in a live format. There is a
 
 ![Testing](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/project2htmlcheck.PNG)
 
-![Testing](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/csscheck2.PNG)
+![Testing](https://github.com/tomcoldham/quizproject2/blob/main/assets/images/csscheckproject2.PNG)
 
 
 ### Unfixed Bugs
